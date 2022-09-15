@@ -25,8 +25,8 @@
       margin: 0px auto;
    }
 
-   // &__logo {
-   // }
+   &__logo {
+   }
 
    &__nav {
       display: flex;
@@ -36,6 +36,11 @@
    &__link {
       color: var(--white-color);
       font-size: 18px;
+      transition: color 0.35s ease;
+
+      &:hover{
+         color: var(--yellow);
+      }
    }
 
    &__btns {
@@ -63,9 +68,21 @@
 .btn-lang {
    border: 2px solid var(--white-color);
    padding: 15px 15px;
+   transition: all 0.35s ease;
+
+   &:hover{
+      color: var(--yellow);
+      border-color: var(--yellow);
+   }
 }
 .btn-yellow {
    border: 2px solid var(--yellow);
    padding: 15px 25px;
    color: var(--yellow);
+   transition: all 0.35s ease;
+
+   &:hover{
+      background: var(--yellow);
+      color: var(--main-color);
+   }
 }

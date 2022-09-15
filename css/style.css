@@ -177,6 +177,10 @@ h1, h2, h3, h4, h5, h6 {
 .header__link {
   color: var(--white-color);
   font-size: 18px;
+  transition: color 0.35s ease;
+}
+.header__link:hover {
+  color: var(--yellow);
 }
 .header__btns {
   display: flex;
@@ -202,12 +206,22 @@ h1, h2, h3, h4, h5, h6 {
 .btn-lang {
   border: 2px solid var(--white-color);
   padding: 15px 15px;
+  transition: all 0.35s ease;
+}
+.btn-lang:hover {
+  color: var(--yellow);
+  border-color: var(--yellow);
 }
 
 .btn-yellow {
   border: 2px solid var(--yellow);
   padding: 15px 25px;
   color: var(--yellow);
+  transition: all 0.35s ease;
+}
+.btn-yellow:hover {
+  background: var(--yellow);
+  color: var(--main-color);
 }
 
 .cooperate {
