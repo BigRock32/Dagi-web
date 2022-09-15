@@ -19,7 +19,7 @@
       font-family: "ProximaNova";
       text-transform: uppercase;
       max-width: 700px;
-      color: #FFF;
+      color: var(--white-color);
       line-height: 1.2em;
       letter-spacing: 2px;
       margin: 0px 0px 30px 0px;
@@ -32,7 +32,7 @@
    &__btn {
       display: inline-block;
       background: linear-gradient(90deg, #FFDD2D, #FFC42D);
-      color: #1A1A1A;
+      color: var(--main-color);
       margin-top: 40px;
    }
 
@@ -64,8 +64,8 @@
       margin-bottom: 7px;
       font-family: 'ProximaNova';
       font-size: 28px;
-      color: #FFDD2D;
-      border-left: 3px solid #FFDD2D;
+      color: var(--yellow);
+      border-left: 3px solid var(--yellow);
    }
 
    &__btm{

@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "ProximaNova";
   text-transform: uppercase;
   max-width: 700px;
-  color: #FFF;
+  color: var(--white-color);
   line-height: 1.2em;
   letter-spacing: 2px;
   margin: 0px 0px 30px 0px;
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 .first-screen__btn {
   display: inline-block;
   background: linear-gradient(90deg, #FFDD2D, #FFC42D);
-  color: #1A1A1A;
+  color: var(--main-color);
   margin-top: 40px;
 }
 .first-screen__right {
@@ -132,8 +132,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 7px;
   font-family: "ProximaNova";
   font-size: 28px;
-  color: #FFDD2D;
-  border-left: 3px solid #FFDD2D;
+  color: var(--yellow);
+  border-left: 3px solid var(--yellow);
 }
 .list__btm {
   padding-left: 13px;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0%;
   right: 0%;
   z-index: 100;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-color);
   border-radius: 25px;
   font-family: "ProximaNova";
   font-weight: 700;
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 40px;
 }
 .header__link {
-  color: #fff;
+  color: var(--white-color);
   font-size: 18px;
 }
 .header__btns {
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
 }
 .header__btn {
-  color: #FFF;
+  color: var(--white-color);
   font-size: 16px;
   border-radius: 15px;
 }
@@ -200,18 +200,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-lang {
-  border: 2px solid #FFF;
+  border: 2px solid var(--white-color);
   padding: 15px 15px;
 }
 
 .btn-yellow {
-  border: 2px solid #FFDD2D;
+  border: 2px solid var(--yellow);
   padding: 15px 25px;
-  color: #FFDD2D;
+  color: var(--yellow);
 }
 
 .cooperate {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 .cooperate__row {
   display: flex;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 31%;
 }
 .cooperate__item:hover .cooperate__number-box {
-  color: #FFDD2D;
+  color: var(--yellow);
 }
 .cooperate__number-box {
   font-family: "Poppins";
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 180px;
   line-height: 0.82em;
   color: transparent;
-  -webkit-text-stroke: 2px #FFDD2D;
+  -webkit-text-stroke: 2px var(--yellow);
   transition: color 0.3s linear;
 }
 .cooperate__number {
@@ -240,11 +240,101 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "ProximaNova";
   font-size: 28px;
   line-height: 1.1em;
-  color: #fff;
+  color: var(--white-color);
   margin-bottom: 10px;
 }
 .cooperate__text {
   line-height: 1.3em;
+}
+
+.services {
+  padding-bottom: 120px;
+}
+.services__row {
+  display: flex;
+  gap: 30px;
+}
+.services__item {
+  padding: 25px 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.0392156863);
+  transition: background-color 0.4s ease;
+  width: 360px;
+}
+.services__item:hover {
+  background: var(--yellow);
+}
+.services__item:hover .services__wrap, .services__item:hover .services__title {
+  color: var(--main-color);
+}
+.services__item:hover .services__btn {
+  opacity: 1;
+}
+.services__item:hover .services__price {
+  transform: translateY(-130%);
+}
+.services__wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: color 0.4s ease;
+  position: relative;
+}
+.services__title {
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+.services__text {
+  line-height: 1.3em;
+  flex-grow: 1;
+}
+.services__price {
+  font-family: "ProximaNova";
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: transform 0.4s ease;
+}
+.services__btn {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.services__btn-text {
+  font-family: "ProximaNova";
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.services__btn-icon {
+  margin-left: 10px;
+}
+
+.title-h2 {
+  font-family: "ProximaNova";
+  font-size: 35px;
+  line-height: 1.2em;
+  max-width: 400px;
+  margin-bottom: 50px;
+  color: var(--white-color);
+}
+
+.title-h3 {
+  font-family: "ProximaNova";
+  font-size: 28px;
+  line-height: 1.1em;
+  color: var(--white-color);
+}
+
+:root {
+  --main-color: #1A1A1A;
+  --white-color: #fff;
+  --yellow: #FFDD2D;
+  --border-color: #FFFFFF33;
 }
 
 @font-face {
@@ -264,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Gilroy";
   font-size: 20px;
-  background: #1A1A1A;
+  background: var(--main-color);
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -279,7 +369,7 @@ body {
 }
 
 .yellow-text {
-  color: #FFDD2D;
+  color: var(--yellow);
 }
 
 .btn {
@@ -287,13 +377,4 @@ body {
   font-size: 18px;
   padding: 20px 30px;
   border-radius: 15px;
-}
-
-.title-h2 {
-  font-family: "ProximaNova";
-  font-size: 35px;
-  line-height: 1.2em;
-  max-width: 440px;
-  margin-bottom: 50px;
-  color: #fff;
 }

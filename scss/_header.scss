@@ -9,7 +9,7 @@
    left: 0%;
    right: 0%;
    z-index: 100;
-   border: 1px solid #FFFFFF33;
+   border: 1px solid var(--border-color);
    border-radius: 25px;
    font-family: 'ProximaNova';
    font-weight: 700;
@@ -34,7 +34,7 @@
    }
 
    &__link {
-      color: #fff;
+      color: var(--white-color);
       font-size: 18px;
    }
 
@@ -44,7 +44,7 @@
    }
 
    &__btn {
-      color: #FFF;
+      color: var(--white-color);
       font-size: 16px;
       border-radius: 15px;
    }
@@ -61,11 +61,11 @@
 }
 
 .btn-lang {
-   border: 2px solid #FFF;
+   border: 2px solid var(--white-color);
    padding: 15px 15px;
 }
 .btn-yellow {
-   border: 2px solid #FFDD2D;
+   border: 2px solid var(--yellow);
    padding: 15px 25px;
-   color: #FFDD2D;
+   color: var(--yellow);
 }

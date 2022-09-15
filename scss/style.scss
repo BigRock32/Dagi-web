@@ -5,6 +5,16 @@
 @import '_first-screen';
 @import '_header';
 @import '_cooperate';
+@import '_services';
+@import '_titles';
+
+:root{
+   --main-color: #1A1A1A;
+   --white-color: #fff;
+   --yellow: #FFDD2D;
+   --border-color: #FFFFFF33;
+}
+
 
 
 @font-face {
@@ -32,7 +42,7 @@
 body{
 font-family: 'Gilroy';
 font-size: 20px;
-background: #1A1A1A;
+background: var(--main-color);
 color: rgba(255, 255, 255, 0.9);
 }
 
@@ -48,7 +58,7 @@ color: rgba(255, 255, 255, 0.9);
 
 
 .yellow-text{
-   color: #FFDD2D;
+   color: var(--yellow);
 }
 
 .btn {
@@ -56,14 +66,5 @@ color: rgba(255, 255, 255, 0.9);
    font-size: 18px;
    padding: 20px 30px;
    border-radius: 15px;
-}
-
-.title-h2 {
-   font-family: 'ProximaNova';
-   font-size: 35px;
-   line-height: 1.2em;
-   max-width: 440px;
-   margin-bottom: 50px;
-   color: #fff;
 }
 
