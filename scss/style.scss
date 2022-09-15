@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Roboto:wght@400;500&display=swap');
+
+@import '_nullstyle';
+@import '_first-screen';
+@import '_header';
+@import '_cooperate';
+
+
+@font-face {
+   font-family: 'ProximaNova';
+   src: url('../fonts/ProximaNova-Bold.eot');
+   src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+      url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNova-Bold.woff') format('woff'),
+      url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gilroy';
+   src: url('../fonts/Gilroy-Regular.eot');
+   src: local('Gilroy Regular'), local('../fonts/Gilroy-Regular'),
+      url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy-Regular.woff') format('woff'),
+      url('../fonts/Gilroy-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body{
+font-family: 'Gilroy';
+font-size: 20px;
+background: #1A1A1A;
+color: rgba(255, 255, 255, 0.9);
+}
+
+.container{
+   max-width: 1530px;
+   margin: 0 auto;
+}
+
+.wrapper{
+   width: 100%;
+   height: 100%;
+}
+
+
+.yellow-text{
+   color: #FFDD2D;
+}
+
+.btn {
+   font-family: 'ProximaNova';
+   font-size: 18px;
+   padding: 20px 30px;
+   border-radius: 15px;
+}
+
+.title-h2 {
+   font-family: 'ProximaNova';
+   font-size: 35px;
+   line-height: 1.2em;
+   max-width: 440px;
+   margin-bottom: 50px;
+   color: #fff;
+}
+

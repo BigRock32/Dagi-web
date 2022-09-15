@@ -1,0 +1,48 @@
+.cooperate {
+   padding-bottom: 100px;
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      display: flex;
+      flex: 0 0 31%;
+
+      &:hover{
+         .cooperate__number-box {
+            color: #FFDD2D;
+         }
+      }
+   }
+
+   &__number-box {
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 180px;
+      line-height: 0.82em;
+      color: transparent;
+      -webkit-text-stroke: 2px #FFDD2D;
+      transition: color 0.3s linear;
+   }
+
+   &__number {
+      margin-right: 25px;
+   }
+
+   &__content {
+   }
+
+   &__title {
+      font-family: 'ProximaNova';
+      font-size: 28px;
+      line-height: 1.1em;
+      color: #fff;
+      margin-bottom: 10px;
+   }
+
+   &__text {
+      line-height: 1.3em;
+   }
+}
