@@ -9,6 +9,8 @@
 @import '_titles';
 @import '_banner';
 @import '_results';
+@import '_projects';
+
 
 
 :root{
@@ -17,6 +19,7 @@
    --yellow: #FFDD2D;
    --border-color: #FFFFFF33;
    --light-bg: #FFFFFF0A;
+   --text-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -47,7 +50,7 @@ body{
 font-family: 'Gilroy';
 font-size: 20px;
 background: var(--main-color);
-color: rgba(255, 255, 255, 0.9);
+color: var(--text-color);
 }
 
 .container{
