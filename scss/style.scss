@@ -10,8 +10,7 @@
 @import '_banner';
 @import '_results';
 @import '_projects';
-
-
+@import '_steps';
 
 :root{
    --main-color: #1A1A1A;
@@ -75,3 +74,9 @@ color: var(--text-color);
    border-radius: 15px;
 }
 
+.arrow-btn{
+   display: flex;
+   align-items: center;
+   font-family: 'ProximaNova';
+   font-size: 18px;
+}

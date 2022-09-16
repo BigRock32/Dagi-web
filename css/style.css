@@ -314,15 +314,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.4s ease;
 }
 .services__btn {
-  display: flex;
-  align-items: center;
   color: var(--main-color);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 .services__btn-text {
-  font-family: "ProximaNova";
-  font-size: 18px;
   margin-bottom: 3px;
 }
 .services__btn-icon {
@@ -336,6 +332,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 400px;
   margin-bottom: 50px;
   color: var(--white-color);
+}
+
+.h2-large {
+  max-width: 600px;
 }
 
 .title-h3 {
@@ -529,13 +529,80 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   height: 2px;
   background: linear-gradient(90deg, #FFDD2D, #FFC42D);
-  transition: all 0.25s linear;
+  transition: all 0.3s linear;
 }
 .link__line-2 {
   width: 20%;
   height: 2px;
   background: linear-gradient(90deg, #FFDD2D, #FFC42D);
-  transition: all 0.25s linear;
+  transition: all 0.3s linear;
+}
+
+.steps {
+  padding-bottom: 120px;
+}
+.steps__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.steps__item {
+  transition: background-color 0.35s ease;
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  width: 49%;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  padding: 25px 30px;
+  background-color: var(--light-bg);
+  overflow: hidden;
+}
+.steps__item:hover {
+  background: var(--yellow);
+}
+.steps__item:hover .steps__title, .steps__item:hover .steps__text, .steps__item:hover .steps__number {
+  color: var(--main-color);
+}
+.steps__title {
+  margin-bottom: 10px;
+  transition: color 0.35s ease;
+}
+.steps__number {
+  font-size: 40px;
+  color: var(--yellow);
+  transition: color 0.35s ease;
+}
+.steps__text {
+  color: var(--text-color);
+  line-height: 1.3em;
+  transition: color 0.35s ease;
+}
+.steps__btn {
+  margin-top: 15px;
+  color: var(--yellow);
+}
+.steps__btn-text {
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.steps__img {
+  max-width: 240px;
+}
+.steps__bg-gradient {
+  position: absolute;
+  right: -23%;
+  width: 300px;
+  height: 100%;
+  background: rgba(255, 221, 45, 0.15);
+  border-radius: 50%;
+  filter: blur(170px);
+  z-index: -1;
+}
+
+.reword {
+  width: 210px;
 }
 
 :root {
@@ -587,4 +654,11 @@ body {
   font-size: 18px;
   padding: 20px 30px;
   border-radius: 15px;
+}
+
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  font-family: "ProximaNova";
+  font-size: 18px;
 }

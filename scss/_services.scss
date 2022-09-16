@@ -62,16 +62,12 @@
    }
 
    &__btn {
-      display: flex;
-      align-items: center;
       color: var(--main-color);
       opacity: 0;
       transition: opacity 0.4s ease;
    }
 
    &__btn-text {
-      font-family: 'ProximaNova';
-      font-size: 18px;
       margin-bottom: 3px;
    }
 
