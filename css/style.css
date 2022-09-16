@@ -382,6 +382,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--yellow);
 }
 
+.no-radius {
+  border-radius: 0px;
+}
+
 .results {
   padding-bottom: 120px;
 }
@@ -458,6 +462,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
 }
 
+.projects {
+  padding-bottom: 120px;
+}
 .projects__row {
   display: flex;
   gap: 70px;
@@ -465,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 .projects__column-left {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 50px;
   width: 50%;
 }
@@ -478,6 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 25px;
   overflow: hidden;
   margin-bottom: 20px;
+  width: 100%;
 }
 .projects__img {
   width: 100%;
@@ -503,6 +512,30 @@ h1, h2, h3, h4, h5, h6 {
   gap: 50px;
   width: 50%;
   margin-top: 200px;
+}
+
+.link:hover .link__line-2 {
+  width: 0%;
+}
+.link:hover .link__line {
+  width: 100%;
+}
+.link__line-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.link__line {
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+  transition: all 0.25s linear;
+}
+.link__line-2 {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+  transition: all 0.25s linear;
 }
 
 :root {
