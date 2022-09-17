@@ -1,0 +1,114 @@
+.questions {
+   padding-bottom: 120px;
+
+   &__wrap {
+      position: relative;
+      display: flex;
+      gap: 100px;
+      justify-content: space-between;
+      padding: 40px;
+      background: var(--light-bg);
+      border-radius: 25px;
+      border: 1px solid var(--border-color);
+      min-height: 500px;
+      overflow: hidden;
+   }
+
+   &__intro {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 31%;
+   }
+
+   &__title {
+      max-width: none;
+      margin-bottom: 20px;
+   }
+
+   &__subtitle {
+      line-height: 1.3em;
+      padding-bottom: 30px;
+   }
+
+   &__btn {
+      background: var(--yellow);
+      color: var(--main-color);
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 69%;
+   }
+
+	&__question {
+      border-radius: 15px;
+      border: 1px solid var(--border-color);
+      background: var(--light-bg);
+	}
+
+	&__question-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px;
+      cursor: pointer;
+
+      &:hover{
+         .questions__question-title{
+            color: var(--yellow);
+         }
+      }
+	}
+
+	&__question-title {
+      transition: color 0.35s ease;
+      user-select: none;
+	}
+
+	&__question-icon {
+      transition: transform .4s ease;
+	}
+
+	&__question-body {
+      padding: 0 25px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all .4s ease-in;
+      overflow: auto;
+	}
+
+	&__question-text {
+      padding-bottom: 20px;
+      line-height: 1.3em;
+	}
+
+   &__bg-img {
+      position: absolute;
+      left: -2%;
+      bottom: -23%;
+      z-index: 1;
+   }
+
+   &__bg-gradient {
+      position: absolute;
+      left: -17%;
+      bottom: -67%;
+      z-index: -1;
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background: rgba(255, 221, 45, 0.15);
+      filter: blur(170px);
+   }
+}
+
+.rotate .questions__question-icon{
+   transform: rotate(180deg);
+}
+
+
+
+

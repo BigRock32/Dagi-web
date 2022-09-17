@@ -657,6 +657,103 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.questions {
+  padding-bottom: 120px;
+}
+.questions__wrap {
+  position: relative;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  padding: 40px;
+  background: var(--light-bg);
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  min-height: 500px;
+  overflow: hidden;
+}
+.questions__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 31%;
+}
+.questions__title {
+  max-width: none;
+  margin-bottom: 20px;
+}
+.questions__subtitle {
+  line-height: 1.3em;
+  padding-bottom: 30px;
+}
+.questions__btn {
+  background: var(--yellow);
+  color: var(--main-color);
+}
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 69%;
+}
+.questions__question {
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  background: var(--light-bg);
+}
+.questions__question-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+.questions__question-head:hover .questions__question-title {
+  color: var(--yellow);
+}
+.questions__question-title {
+  transition: color 0.35s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.questions__question-icon {
+  transition: transform 0.4s ease;
+}
+.questions__question-body {
+  padding: 0 25px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+  overflow: auto;
+}
+.questions__question-text {
+  padding-bottom: 20px;
+  line-height: 1.3em;
+}
+.questions__bg-img {
+  position: absolute;
+  left: -2%;
+  bottom: -23%;
+  z-index: 1;
+}
+.questions__bg-gradient {
+  position: absolute;
+  left: -17%;
+  bottom: -67%;
+  z-index: -1;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: rgba(255, 221, 45, 0.15);
+  filter: blur(170px);
+}
+
+.rotate .questions__question-icon {
+  transform: rotate(180deg);
+}
+
 :root {
   --main-color: #1A1A1A;
   --white-color: #fff;
