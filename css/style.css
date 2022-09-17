@@ -605,6 +605,58 @@ h1, h2, h3, h4, h5, h6 {
   width: 210px;
 }
 
+.footer {
+  padding: 50px 0px;
+  border-top: 1px solid var(--border-color);
+  background: var(--light-bg);
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--border-color);
+}
+.footer__nav {
+  display: flex;
+  gap: 50px;
+}
+.footer__link {
+  font-family: "ProximaNova";
+  color: var(--white-color);
+  font-size: 18px;
+  transition: color 0.35s ease;
+}
+.footer__link:hover {
+  color: var(--yellow);
+}
+.footer__social {
+  display: flex;
+  gap: 30px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.footer__copywright {
+  color: var(--white-color);
+}
+.footer__mail {
+  color: var(--white-color);
+  transition: color 0.35s ease;
+}
+.footer__mail:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__privacy {
+  color: var(--white-color);
+  transition: color 0.35s ease;
+}
+.footer__privacy:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 :root {
   --main-color: #1A1A1A;
   --white-color: #fff;

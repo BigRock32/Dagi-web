@@ -1,0 +1,76 @@
+.footer {
+   padding: 50px 0px;
+   border-top: 1px solid var(--border-color);
+   background: var(--light-bg);
+
+   &__row {
+   }
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 50px;
+      border-bottom: 1px solid var(--border-color);
+   }
+
+   &__logo {
+   }
+
+   &__logo-img {
+   }
+
+   &__nav {
+      display: flex;
+      gap: 50px;
+   }
+
+   &__link {
+      font-family: 'ProximaNova';
+      color: var(--white-color);
+      font-size: 18px;
+      transition: color 0.35s ease;
+
+      &:hover{
+         color: var(--yellow);
+      }
+   }
+
+   &__social {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__icon {
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 35px;
+   }
+
+   &__copywright {
+      color: var(--white-color);
+   }
+
+   &__mail {
+      color: var(--white-color);
+      transition: color 0.35s ease;
+
+      &:hover{
+         color: rgba(255, 255, 255, 0.6);
+      }
+   }
+
+   &__privacy {
+      color: var(--white-color);
+      transition: color 0.35s ease;
+
+      &:hover{
+         color: rgba(255, 255, 255, 0.6);
+      }
+   }
+}
+
+
