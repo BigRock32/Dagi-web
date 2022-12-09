@@ -108,6 +108,12 @@ if(menuLinks.length > 0){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
 
+            if(burger.classList.contains('_active')){
+                document.body.classList.remove('_lock')
+                burger.classList.remove('_active')
+                burgerMenu.classList.remove('_active')
+            }
+
             window.scrollTo({
                 top: gotoBlockValue,
                 behavior: 'smooth'
@@ -117,3 +123,15 @@ if(menuLinks.length > 0){
     }
 }
 //Конец кода прокрутки страницы
+
+
+//Анимация бургера
+const burger = document.querySelector('.burger')
+const burgerMenu = document.querySelector('.burger-menu')
+if(burger){
+    burger.addEventListener('click', function(e){
+        document.body.classList.toggle('_lock')
+        burger.classList.toggle('_active')
+        burgerMenu.classList.toggle('_active')
+    })
+}

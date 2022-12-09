@@ -54,6 +54,10 @@ background: var(--main-color);
 color: var(--text-color);
 }
 
+body._lock{
+   overflow: hidden;
+}
+
 .container{
    max-width: 1530px;
    margin: 0 auto;
