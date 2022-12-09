@@ -554,8 +554,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__link {
     display: block;
-    font-size: 15px;
-    font-size: 22px;
+    font-size: 28px;
   }
   .header__row {
     max-width: 708px;
@@ -630,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(-45deg) translate(0px, -50%);
   }
   .burger._active::after {
-    bottom: 50%;
+    bottom: 48%;
     transform: rotate(45deg) translate(0px, 50%);
   }
   .burger-menu {

@@ -135,3 +135,4 @@ if(burger){
         burgerMenu.classList.toggle('_active')
     })
 }
+//Конец анимации бургера

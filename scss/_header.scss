@@ -247,8 +247,7 @@
    
       &__link {
          display: block;
-         font-size: 15px;
-         font-size: 22px;
+         font-size: 28px;
       }
    
       &__row{
@@ -341,7 +340,7 @@
    }
 
    .burger._active::after{
-      bottom: 50%;
+      bottom: 48%;
       transform: rotate(45deg) translate(0px, 50%);
    }
 
