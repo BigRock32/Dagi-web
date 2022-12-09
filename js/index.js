@@ -10,6 +10,36 @@ const header = document.querySelector('.header');
         header.classList.remove('_fixed');
     }
     });
+
+// const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+// function handleTabletChange(e) {
+//     if (e.matches) {
+        
+//         document.addEventListener('DOMContentLoaded', function(){
+//             console.log('Ready');
+//         })
+//     }
+// }
+
+// mediaQuery.addListener(handleTabletChange)
+// handleTabletChange(mediaQuery)
+
+
+// function checkMediaQuery() {
+//     if (window.innerWidth < 769) {
+//         window.addEventListener('scroll', () => {
+//             let scrollTop = window.pageYOffset;
+        
+//             if (scrollTop >= 10) {
+//                 header.classList.remove('_fixed');
+//             }else{
+//                 header.classList.add('_fixed');
+//             }
+//         });
+//     }
+// }
+// window.addEventListener('resize', checkMediaQuery);
 //Конец анимации шапки
 
 

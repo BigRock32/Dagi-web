@@ -109,6 +109,173 @@
    transform: rotate(180deg);
 }
 
+@media (max-width: 1440px) {
+   .questions{
+      padding-bottom: 100px;
+
+      &__wrap{
+         padding: 30px;
+         gap: 60px;
+      }
+
+      &__intro{
+         width: 36%;
+      }
+
+      &__content{
+         width: 64%;
+      }
+
+      &__bg-img{
+         left: -2%;
+         bottom: -23%;
+      }
+
+      &__subtitle{
+         font-size: 18px;
+         padding-bottom: 25px;
+      }
+
+      &__question-head{
+         padding: 20px;
+      }
+
+      &__question-text{
+         font-size: 18px;
+      }
+
+      &__btn{
+         font-size: 16px;
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .questions{
+      padding-bottom: 80px;
+
+      &__wrap{
+         padding: 20px;
+         gap: 30px;
+         flex-direction: column;
+      }
+
+      &__intro{
+         width: 39%;
+      }
+
+      &__content{
+         width: 100%;
+         gap: 15px;
+      }
+
+      &__bg-img{
+         position: absolute;
+         top: 5%;
+         left: 77%;
+         max-width: 200px;
+      }
+
+      &__bg-gradient {
+         left: 80%;
+         top: -67%;
+         height: 500px;
+         width: 500px;
+      }
+
+      &__subtitle{
+         font-size: 18px;
+         padding-bottom: 25px;
+      }
+
+      &__question-head{
+         padding: 15px;
+      }
+
+      &__question-body {
+         padding: 0 15px;
+      }
+
+      &__question-text{
+         font-size: 16px;
+      }
+
+      &__btn{
+         font-size: 15px;
+      }
+   }
+}
 
 
 
+@media (max-width: 450px) {
+   .questions{
+      padding-bottom: 80px;
+
+      &__wrap{
+         padding: 15px;
+         gap: 30px;
+         flex-direction: column;
+      }
+
+      &__intro{
+         width: 100%;
+      }
+
+      &__title{
+         text-align: left;
+         margin-bottom: 10px;
+      }
+
+      &__content{
+         width: 100%;
+         gap: 15px;
+      }
+
+      &__bg-img{
+         position: absolute;
+         top: 5%;
+         left: 77%;
+         max-width: 200px;
+         display: none;
+      }
+
+      &__bg-gradient {
+         left: 80%;
+         top: -67%;
+         height: 500px;
+         width: 500px;
+      }
+
+      &__subtitle{
+         font-size: 14px;
+         padding-bottom: 20px;
+      }
+
+      &__question-title{
+         margin-right: 15px;
+      }
+
+      &__question-head{
+         padding: 10px;
+         align-items: start;
+      }
+
+      &__question-body {
+         padding: 0 10px;
+      }
+
+      &__question-icon{
+         margin-top: 3px;
+      }
+
+      &__question-text{
+         font-size: 14px;
+      }
+
+      &__btn{
+         font-size: 14px;
+         width: 100%;
+      }
+   }
+}

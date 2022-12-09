@@ -15,23 +15,81 @@
                <img src="./media/logo 1.svg" alt="">
             </div>
             <div class="header__nav">
-               <a href="" class="header__link">Услуги</a>
-               <a href="" class="header__link">Результаты</a>
-               <a href="" class="header__link">Кейсы</a>
-               <a href="" class="header__link">Вопросы</a>
-               <a href="" class="header__link">Конткаты</a>
+               <ul class="header__nav-list">
+                  <li>
+                     <div class="link-wrap">
+                        <a data-goto="" href="" class="header__link _yellow-link">Услуги</a>
+                        <!-- <svg class="link-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M1 1L5.61589 6.53907C5.81579 6.77895 6.18421 6.77894 6.38411 6.53907L11 1" stroke-width="2" stroke-linecap="round"/>
+                           </svg> -->
+                     </div>
+                     <!-- <ul class="header__sub-nav-list">
+                        <div class="nav-list-wrap">
+                           <li><a href="" class="header__link _sub-link">Сайт-визитка</a></li>
+                           <li><a href="" class="header__link _sub-link">Лендинг</a></li>
+                           <li><a href="" class="header__link _sub-link">Корпоративный</a></li>
+                           <li><a href="" class="header__link _sub-link">Интернет магазин</a></li>
+                           <li><a href="" class="header__link _sub-link">Сайт-каталог</a></li>
+                        </div>
+                     </ul> -->
+                  </li>
+                  <li><a href="" class="header__link">Кейсы</a></li>
+                  <li><a href="" class="header__link">Этапы работы</a></li>
+                  <li><a href="" class="header__link">Конткаты</a></li>
+               </ul>
             </div>
             <div class="header__btns">
                <a href="" class="header__btn btn-lang">En</a>
                <a href="" class="header__btn btn-yellow">Заказать звонок</a>
             </div>
+            <div class="burger">
+               <div class="burger__line"></div>
+               <div class="burger__line"></div>
+               <div class="burger__line"></div>
+            </div>
          </div>
       </header>
+      <div class="burger-menu">
+         <ul class="header__nav-list">
+            <li>
+               <div class="link-wrap">
+                  <a href="" class="header__link _yellow-link">Услуги</a>
+                  <!-- <svg class="link-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="white" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 1L5.61589 6.53907C5.81579 6.77895 6.18421 6.77894 6.38411 6.53907L11 1" stroke-width="2" stroke-linecap="round"/>
+                     </svg> -->
+               </div>
+               <!-- <ul class="header__sub-nav-list">
+                  <div class="nav-list-wrap">
+                     <li><a href="" class="header__link _sub-link">Сайт-визитка</a></li>
+                     <li><a href="" class="header__link _sub-link">Лендинг</a></li>
+                     <li><a href="" class="header__link _sub-link">Корпоративный</a></li>
+                     <li><a href="" class="header__link _sub-link">Интернет магазин</a></li>
+                     <li><a href="" class="header__link _sub-link">Сайт-каталог</a></li>
+                  </div>
+               </ul> -->
+            </li>
+            <li><a href="" class="header__link">Этапы работы</a></li>
+            <li><a href="" class="header__link">Кейсы</a></li>
+            <li><a href="" class="header__link">Конткаты</a></li>
+         </ul>
+         <div class="footer__social footer__social_mob social-btns">
+            <a href="" class="footer__icon header-ic">
+               <img src="./media/Whatsapp.svg" alt="">
+            </a>
+            <a href="" class="footer__icon header-ic">
+               <img src="./media/Telegram.svg" alt="">
+            </a>
+         </div>
+         <div class="header__btns header__btns_mob">
+            <a href="" class="header__btn btn-lang">En</a>
+            <a href="" class="header__btn btn-yellow">Заказать звонок</a>
+         </div>
+      </div>
       <section class="first-screen">
          <div class="container">
             <div class="first-screen__intro">
                <div class="first-screen__left">
-                  <h1 class="first-screen__title">разработка персональных <span class="yellow-text">web-сайтов</span> для вашего бизнеса</h1>
+                  <h1 class="first-screen__title">Агенство по созданию уникальных сайтов для <span class="yellow-text">WebFlow</span></h1>
                   <p class="first-screen__subtitle">Получи до 10 раз больше продаж и стань богаче за счет прозрачной аналитики, правильного планирования поставок, повышения позиций своих товаров и анализа показателей других продавцов.<br><br>Специализируемся на продуктах для B2B-компаний с высоким средним чеком и длинным циклом сделки. 
                   </p>
                   <a href="" class="first-screen__btn btn">Заказть консультацию</a>
@@ -62,7 +120,7 @@
                сотрудничества</h2>
             <div class="cooperate__row">
                <div class="cooperate__item">
-                  <div class="cooperate__number-box">
+                  <div class="cooperate__number-box cooperate__number-box_first">
                      <div class="cooperate__number">1</div>
                   </div>
                      <div class="cooperate__content">
@@ -94,7 +152,7 @@
       </section>
       <section class="services">
          <div class="container">
-            <h2 class="title-h2"><span class="yellow-text">Наши услуги</span> по созданию сайтов</h2>
+            <h2 class="title-h2 h2-tablet"><span class="yellow-text">Наши услуги</span> по созданию сайтов</h2>
          </div>
          <div class="services__row">
             <a href="" class="services__item">
@@ -392,24 +450,41 @@
       <footer class="footer">
          <div class="container">
             <div class="footer__row">
-               <div class="footer__top">
-                  <div class="footer__logo">
-                     <img src="./media/logo 1.svg" alt="" class="footer__logo-img">
+               <div class="footer__wrap">
+                  <div class="footer__top">
+                     <div class="footer__logo">
+                        <img src="./media/logo 1.svg" alt="" class="footer__logo-img">
+                     </div>
+                     <div class="footer__nav">
+                        <a href="" class="footer__link">Этапы работы</a>
+                        <a href="" class="footer__link">Кейсы</a>
+                        <a href="" class="footer__link">Контакты</a>
+                     </div>
+                     <div class="footer__social">
+                        <a href="" class="footer__icon">
+                           <img src="./media/Whatsapp.svg" alt="">
+                        </a>
+                        <a href="" class="footer__icon">
+                           <img src="./media/Telegram.svg" alt="">
+                        </a>
+                     </div>
                   </div>
-                  <div class="footer__nav">
-                     <a href="" class="footer__link">Услуги</a>
-                     <a href="" class="footer__link">Кейсы</a>
-                     <a href="" class="footer__link">Этапы работы</a>
-                     <a href="" class="footer__link">Отзывы</a>
-                     <a href="" class="footer__link">Контакты</a>
-                  </div>
-                  <div class="footer__social">
-                     <a href="" class="footer__icon">
-                        <img src="./media/Whatsapp.svg" alt="">
-                     </a>
-                     <a href="" class="footer__icon">
-                        <img src="./media/Telegram.svg" alt="">
-                     </a>
+                  <div class="footer__subtop">
+                     <div class="footer__nav footer__nav_subnav">
+                        <a href="" class="footer__link footer__link_sub">Сайт-визитка</a>
+                        <a href="" class="footer__link footer__link_sub">Лендинг</a>
+                        <a href="" class="footer__link footer__link_sub">Корпоративный</a>
+                        <a href="" class="footer__link footer__link_sub">Интернет магазин</a>
+                        <a href="" class="footer__link footer__link_sub">Сайт-каталог</a>
+                     </div>
+                     <div class="footer__social footer__social_mob">
+                        <a href="" class="footer__icon">
+                           <img src="./media/Whatsapp.svg" alt="">
+                        </a>
+                        <a href="" class="footer__icon">
+                           <img src="./media/Telegram.svg" alt="">
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="footer__bottom">

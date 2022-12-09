@@ -74,6 +74,8 @@ color: var(--text-color);
    font-size: 18px;
    padding: 20px 30px;
    border-radius: 15px;
+   display: flex;
+   justify-content: center;
 }
 
 .arrow-btn{
@@ -81,4 +83,51 @@ color: var(--text-color);
    align-items: center;
    font-family: 'ProximaNova';
    font-size: 18px;
+}
+
+@media (max-width: 1440px) {
+   .container{
+      max-width: 1170px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .container{
+      max-width: 950px;
+   }
+
+   .btn {
+      font-size: 15px;
+      padding: 18px 25px;
+      border-radius: 15px;
+   }
+}
+
+@media (max-width: 768px) {
+   .container{
+      max-width: 708px;
+   }
+
+   .btn {
+      font-size: 15px;
+      padding: 18px 25px;
+      border-radius: 15px;
+   }
+}
+
+@media (max-width: 450px) {
+   .container{
+      max-width: 330px;
+   }
+
+   .wrapper{
+      overflow: hidden;
+      height: auto;
+   }
+
+   .btn {
+      font-size: 14px;
+      padding: 16px 25px;
+      border-radius: 15px;
+   }
 }
