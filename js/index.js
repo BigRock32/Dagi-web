@@ -171,9 +171,9 @@ function closeModal(){
     document.body.classList.remove('_lock')
 }
 
-
 function btnHandler(e){
-    const elem = e.target
-    // formTitle.innerText = e.target.btnTitle.innerText;
-    console.log(e.target.btnTitle);
+    const parent = e.target.closest('.services__item');
+    const title = parent.querySelector('.services__title');
+    const titleText = title.innerText;
+    formTitle.innerText = titleText;
 }
