@@ -13,6 +13,7 @@
 @import '_steps';
 @import '_footer';
 @import '_questions';
+@import '_modals-forms';
 
 :root{
    --main-color: #1A1A1A;
@@ -122,6 +123,24 @@ body._lock{
 @media (max-width: 450px) {
    .container{
       max-width: 330px;
+   }
+
+   .wrapper{
+      overflow: hidden;
+      height: auto;
+   }
+
+   .btn {
+      font-size: 14px;
+      padding: 16px 25px;
+      border-radius: 15px;
+   }
+}
+
+@media (max-width: 320px) {
+   .container{
+      max-width: 330px;
+      padding: 0px 15px 0px 15px;
    }
 
    .wrapper{

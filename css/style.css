@@ -996,6 +996,41 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2px;
   }
 }
+@media (max-width: 320px) {
+  .services {
+    padding-bottom: 80px;
+  }
+  .services__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .services__row {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    overflow: visible;
+    max-width: 330px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+  }
+  .services__item {
+    min-height: 170px;
+    padding: 15px 15px;
+    width: 100%;
+    min-width: auto;
+  }
+  .services__title {
+    margin-bottom: 8px;
+  }
+  .services__price {
+    font-size: 16px;
+  }
+  .services__btn-text {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}
 .title-h2 {
   font-family: "ProximaNova";
   font-size: 35px;
@@ -2163,6 +2198,167 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+.modal {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  background-color: rgba(26, 26, 26, 0.9490196078);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+.modal__close-bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content {
+  display: flex;
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  padding: 35px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  top: -100%;
+  transform: perspective(800px) rotateX(90deg);
+  transition: all 0.6s ease;
+}
+.modal__close-icon {
+  position: absolute;
+  top: 37px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modal._open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal._open .modal__content {
+  top: 0%;
+  transform: perspective(800px);
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form__title {
+  font-family: "ProximaNova";
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+.form__item {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+}
+.form__item_first {
+  margin-bottom: 30px;
+}
+.form__input-img {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.form__lable {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  z-index: 1;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.form__input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+.form__input:focus {
+  border-color: var(--yellow);
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input:focus ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:focus ~ .form__input-img {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:-moz-placeholder-shown) ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:not(:-ms-input-placeholder) ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:not(:placeholder-shown) ~ .form__lable {
+  top: -5px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  padding: 0 5px;
+  color: var(--yellow);
+}
+.form__input:not(:-moz-placeholder-shown) ~ .form__input-img {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:-ms-input-placeholder) ~ .form__input-img {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:placeholder-shown) ~ .form__input-img {
+  fill: var(--yellow);
+  opacity: 1;
+}
+.form__input:not(:-moz-placeholder-shown) {
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input:not(:-ms-input-placeholder) {
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__input:not(:placeholder-shown) {
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__button {
+  margin-top: 30px;
+  padding: 16px 25px;
+  background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+}
+
 :root {
   --main-color: #1A1A1A;
   --white-color: #fff;
@@ -2255,6 +2451,21 @@ body._lock {
 @media (max-width: 450px) {
   .container {
     max-width: 330px;
+  }
+  .wrapper {
+    overflow: hidden;
+    height: auto;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 16px 25px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 330px;
+    padding: 0px 15px 0px 15px;
   }
   .wrapper {
     overflow: hidden;

@@ -136,3 +136,44 @@ if(burger){
     })
 }
 //Конец анимации бургера
+
+
+//Модальное окно и форма обратной сзязи
+const btns = document.querySelectorAll('.services__item')
+const modal = document.querySelector('.modal')
+const cross = document.querySelector('.modal__close-icon')
+const closeBg = document.querySelector('.modal__close-bg')
+const formTitle = document.querySelector('.form__title')
+const btnTitle = document.querySelectorAll('.services__title')
+
+if(btns.length > 0){
+    btns.forEach(btn => {
+        btn.addEventListener('click', function(e){
+            modal.classList.add('_open')
+            document.body.classList.add('_lock')
+            e.preventDefault();
+        })
+    })
+}
+
+btns.forEach((btn) => btn.addEventListener('click', btnHandler));
+
+cross.addEventListener('click', closeModal);
+
+closeBg.addEventListener('click', (e)=>{
+    if(e.target == closeBg){
+        closeModal()
+    }
+})
+
+function closeModal(){
+    modal.classList.remove('_open')
+    document.body.classList.remove('_lock')
+}
+
+
+function btnHandler(e){
+    const elem = e.target
+    // formTitle.innerText = e.target.btnTitle.innerText;
+    console.log(e.target.btnTitle);
+}
