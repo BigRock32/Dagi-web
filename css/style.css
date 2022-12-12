@@ -853,6 +853,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   transition: color 0.4s ease;
 }
+.services__hidden-title {
+  display: none;
+}
 .services__text {
   line-height: 1.3em;
   flex-grow: 1;
@@ -2262,6 +2265,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "ProximaNova";
   font-size: 25px;
   margin-bottom: 35px;
+}
+.form__change-title {
+  color: var(--yellow);
+  text-transform: lowercase;
 }
 .form__item {
   position: relative;

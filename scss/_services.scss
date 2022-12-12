@@ -48,6 +48,10 @@
       transition: color 0.4s ease;
    }
 
+   &__hidden-title{
+      display: none;
+   }
+
    &__text {
       line-height: 1.3em;
       flex-grow: 1;

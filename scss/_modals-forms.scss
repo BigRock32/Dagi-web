@@ -69,6 +69,11 @@
          margin-bottom: 35px;
 		}
 
+      &__change-title{
+         color: var(--yellow);
+         text-transform: lowercase;
+      }
+
 		&__item {
          position: relative;
          width: 100%;

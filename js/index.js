@@ -143,8 +143,7 @@ const btns = document.querySelectorAll('.services__item')
 const modal = document.querySelector('.modal')
 const cross = document.querySelector('.modal__close-icon')
 const closeBg = document.querySelector('.modal__close-bg')
-const formTitle = document.querySelector('.form__title')
-const btnTitle = document.querySelectorAll('.services__title')
+const formTitle = document.querySelector('.form__change-title')
 
 if(btns.length > 0){
     btns.forEach(btn => {
@@ -173,7 +172,7 @@ function closeModal(){
 
 function btnHandler(e){
     const parent = e.target.closest('.services__item');
-    const title = parent.querySelector('.services__title');
+    const title = parent.querySelector('.services__hidden-title');
     const titleText = title.innerText;
     formTitle.innerText = titleText;
 }
