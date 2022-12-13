@@ -2369,6 +2369,175 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "ProximaNova";
 }
 
+@media (max-width: 450px) {
+  .modal {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 105;
+    background-color: rgba(26, 26, 26, 0.9490196078);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+  .modal__close-bg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  .modal__content {
+    display: flex;
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    padding: 40px 20px 25px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    top: -100%;
+    transform: perspective(800px) rotateX(90deg);
+    transition: all 0.6s ease;
+  }
+  .modal__close-icon {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .modal._open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal._open .modal__content {
+    top: 0%;
+    transform: perspective(800px);
+  }
+  .form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form__title {
+    font-family: "ProximaNova";
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .form__change-title {
+    color: var(--yellow);
+    text-transform: lowercase;
+  }
+  .form__item {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form__item_first {
+    margin-bottom: 20px;
+  }
+  .form__input-img {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+  .form__lable {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .form__input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+  }
+  .form__input:focus {
+    border-color: var(--yellow);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__input:focus ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:focus ~ .form__input-img {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:-moz-placeholder-shown) ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:not(:-ms-input-placeholder) ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:not(:placeholder-shown) ~ .form__lable {
+    top: -5px;
+    font-size: 12px;
+    background-color: var(--main-color);
+    padding: 0 5px;
+    color: var(--yellow);
+  }
+  .form__input:not(:-moz-placeholder-shown) ~ .form__input-img {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:-ms-input-placeholder) ~ .form__input-img {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:placeholder-shown) ~ .form__input-img {
+    fill: var(--yellow);
+    opacity: 1;
+  }
+  .form__input:not(:-moz-placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__input:not(:-ms-input-placeholder) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__input:not(:placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .form__button {
+    margin-top: 25px;
+    padding: 16px 25px;
+    background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+    border-radius: 5px;
+    font-family: "ProximaNova";
+    width: 100%;
+  }
+}
 :root {
   --main-color: #1A1A1A;
   --white-color: #fff;

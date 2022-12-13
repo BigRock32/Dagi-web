@@ -157,4 +157,165 @@
 		}
 }
 
+@media (max-width: 450px) {
+   .modal {
+      display: flex;
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 105;
+      background-color: #1A1A1AF2;
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+   
+         &__close-bg{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 15px;
+         }
+   
+         &__content {
+            display: flex;
+            position: relative;
+            max-width: 550px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background: var(--main-color);
+            padding: 40px 20px 25px 20px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0px 4px 4px 0px #00000040;
+            top: -100%;
+            transform: perspective(800px) rotateX(90deg);
+            transition: all 0.6s ease;
+         }
+   
+         &__close-icon{
+            position: absolute;
+            top: 13px;
+            right: 20px;
+            cursor: pointer;
+         }
+   }
+   
+   .modal._open{
+      opacity: 1;
+      pointer-events: auto;
+   
+      .modal__content{
+         top: 0%;
+         transform: perspective(800px);
+      }
+   }
+   
+   .form {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   
+         &__title {
+            font-family: 'ProximaNova';
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-align: center;
+         }
+   
+         &__change-title{
+            color: var(--yellow);
+            text-transform: lowercase;
+         }
+   
+         &__item {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            font-family: 'Gilroy';
+            font-size: 14px;
+            font-weight: 400;
+   
+            &_first{
+               margin-bottom: 20px;
+            }
+         }
+   
+         &__input-img{
+            position: absolute;
+            right: 15px;
+            top: 13px;
+         }
+   
+         &__lable {
+            position: absolute;
+            top: 17px;
+            left: 15px;
+            z-index: 1;
+            transition: all 0.3s ease;
+            pointer-events: none;
+         }
+   
+         &__input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white-color);
+            transition: all 0.3s ease;
+   
+            &:focus{
+               border-color: var(--yellow);
+               background-color: rgba(255, 255, 255, 0);
+               
+               & ~ .form__lable{
+                  top: -5px;
+                  font-size: 12px;
+                  background-color: var(--main-color);
+                  padding: 0 5px;
+                  color: var(--yellow);
+               }
+   
+               & ~ .form__input-img{
+                  fill: var(--yellow);
+                  opacity: 1;
+               }
+            }
+   
+            &:not(:placeholder-shown) ~ .form__lable{
+               top: -5px;
+               font-size: 12px;
+               background-color: var(--main-color);
+               padding: 0 5px;
+               color: var(--yellow);
+            }
+   
+            &:not(:placeholder-shown) ~ .form__input-img{
+               fill: var(--yellow);
+               opacity: 1;
+            }
+   
+            &:not(:placeholder-shown){
+               background-color: rgba(255, 255, 255, 0);
+            }
+         }
+   
+         &__button {
+            margin-top: 25px;
+            padding: 16px 25px;
+            background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+            border-radius: 5px;
+            font-family: 'ProximaNova';
+            width: 100%;
+         }
+   }
+}
+
 
