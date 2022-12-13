@@ -67,6 +67,7 @@
          font-family: 'ProximaNova';
          font-size: 25px;
          margin-bottom: 35px;
+         text-align: center;
 		}
 
       &__change-title{
@@ -78,7 +79,7 @@
          position: relative;
          width: 100%;
          max-width: 350px;
-         font-family: 'ProximaNova';
+         font-family: 'Gilroy';
          font-size: 14px;
          font-weight: 400;
 
@@ -151,6 +152,8 @@
          margin-top: 30px;
          padding: 16px 25px;
          background: linear-gradient(90deg, #FFDD2D, #FFC42D);
+         border-radius: 5px;
+         font-family: 'ProximaNova';
 		}
 }
 
