@@ -56,12 +56,32 @@
 }
 
 .form {
+   position: relative;
    width: 100%;
    max-width: 400px;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 2;
+         width: 100%;
+         height: 100%;
+         background: #1A1A1AF2 url('/media/5Tkz.gif') center / 100px no-repeat;
+         opacity: 0;
+         visibility: hidden;
+         transition: all 0.5s ease;
+      }
+
+      &._sending::after{   
+         opacity: 1;
+         visibility: visible;
+      }
 
 		&__title {
          font-family: 'ProximaNova';
@@ -145,6 +165,10 @@
 
          &:not(:placeholder-shown){
             background-color: rgba(255, 255, 255, 0);
+         }
+
+         &._error{
+            border-color: red;
          }
 		}
 
