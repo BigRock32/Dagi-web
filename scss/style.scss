@@ -90,6 +90,40 @@ body._lock{
    font-size: 18px;
 }
 
+.fixed-tg-link{
+   position: fixed;
+   width: 56px;
+   height: 56px;
+   bottom: 4%;
+   right: 2%;
+   transition: scale 0.3s ease;
+
+   &:hover{
+      scale: 1.1;
+   }
+}
+
+.bg-blur-1{
+   position: absolute;
+   top: -60%;
+   left: -30%;
+   width: 55vw;
+   height: 55vw;
+   transform: rotate(45deg);
+   background: linear-gradient(270deg, rgba(127, 94, 255, 0), rgba(127, 94, 255, 0.1), rgba(127, 94, 255, 0.2), rgba(127, 94, 255, 0.3), rgba(127, 94, 255, 0.4));
+}
+
+.bg-blur-2{
+   position: absolute;
+   top: 20%;
+   right: -35%;
+   width: 40vw;
+   height: 40vw;
+   border-radius: 50%;
+   background: rgba(137, 45, 255, 0.3);
+   filter: blur(200px);
+}
+
 @media (max-width: 1440px) {
    .container{
       max-width: 1170px;
@@ -99,6 +133,14 @@ body._lock{
 @media (max-width: 1024px) {
    .container{
       max-width: 950px;
+   }
+
+   .fixed-tg-link{
+      position: fixed;
+      width: 48px;
+      height: 48px;
+      bottom: 4%;
+      right: 5%;
    }
 
    .btn {
@@ -124,6 +166,14 @@ body._lock{
    .container{
       width: 100%;
       padding: 0px 15px 0px 15px;
+   }
+
+   .fixed-tg-link{
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      bottom: 4%;
+      right: 8%;
    }
 
    .wrapper{
