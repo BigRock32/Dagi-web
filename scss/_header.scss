@@ -10,11 +10,12 @@
    right: 0%;
    z-index: 100;
    border: 1px solid var(--border-color);
-   border-radius: 25px;
+   border-radius: 15px;
    font-family: 'ProximaNova';
    font-weight: 700;
    box-shadow: 0px 4px 4px #00000040;
    transition: all 0.5s;
+   background: rgba(26, 26, 26, 0.5);
 
    &__row {
       display: flex;
@@ -127,7 +128,7 @@
    &__btn {
       color: var(--white-color);
       font-size: 16px;
-      border-radius: 15px;
+      border-radius: 10px;
    }
 }
 
