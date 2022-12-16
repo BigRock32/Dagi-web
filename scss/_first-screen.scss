@@ -12,6 +12,9 @@
 
    &__left {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
    }
 
    &__title {
@@ -26,11 +29,10 @@
    }
 
    &__subtitle {
-      line-height: 1.2rem;
+      line-height: 1.8rem;
    }
 
    &__btn {
-      display: inline-block;
       background: linear-gradient(90deg, #FFDD2D, #FFC42D);
       color: var(--main-color);
       margin-top: 40px;
@@ -288,13 +290,15 @@
       }
 
       &__anim{
-         width: 360px;
-         top: -20px;
-         right: 20px;
+         position: static;
+         width: 100%;
       }
 
       &__right {
-         height: auto;
+         display: flex;
+         max-height: 330px;
+         justify-content: center;
+         align-items: center;
          width: 100%;
       }
 
