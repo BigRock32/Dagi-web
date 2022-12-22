@@ -1,41 +1,60 @@
 .modals {
+   
 }
-.modal {
-   display: flex;
+
+.modal-overlay{
    opacity: 0;
-   pointer-events: none;
-   position: fixed;
+   visibility: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100%;
    height: 100%;
-   z-index: 105;
    background-color: #1A1A1AF2;
    backdrop-filter: blur(4px);
-   transition: all 0.3s ease;
+   transition: all 0.5s ease;
+   position: fixed;
+   z-index: 99;
+}
 
-      &__close-bg{
-         display: flex;
-         width: 100%;
-         height: 100%;
-         justify-content: center;
-         align-items: center;
-      }
+.modal {
+   display: none;
+   position: relative;
+   top: -100%;
+   transform: perspective(800px) rotateX(90deg);
+   transition: all 0.6s ease;
+   max-width: 550px;
+   width: 100%;
 
 		&__content {
          display: flex;
+         overflow: hidden;
          position: relative;
-         max-width: 550px;
          width: 100%;
          justify-content: center;
          align-items: center;
          background: var(--main-color);
-         padding: 35px;
+         padding: 35px 80px;
          border-radius: 15px;
          border: 1px solid var(--border-color);
          box-shadow: 0px 4px 4px 0px #00000040;
-         top: -100%;
-         transform: perspective(800px) rotateX(90deg);
-         transition: all 0.6s ease;
 		}
+
+      &__bg-circle{
+         position: absolute;
+         width: 500px;
+         height: 500px;
+         left: -80%;
+         top: calc(50% - 500px/2);
+         background: rgba(255, 221, 45, 0.1);
+         filter: blur(200px);
+
+         &_right{
+            position: absolute;
+            left: 90%;
+            background: rgba(137, 45, 255, 0.1);
+         }
+      }
 
       &__close-icon{
          position: absolute;
@@ -45,13 +64,14 @@
       }
 }
 
-.modal._open{
+.modal-overlay._open{
    opacity: 1;
-   pointer-events: auto;
+   visibility: visible;
 
-   .modal__content{
+   .modal._open{
+      display: block;
       top: 0%;
-      transform: perspective(800px);
+      transform: perspective(800px) rotateX(0deg);
    }
 }
 
@@ -221,10 +241,10 @@
          }
    
          &__close-icon{
-            position: absolute;
             top: 13px;
             right: 20px;
-            cursor: pointer;
+            width: 18px;
+            height: 18px;
          }
    }
    
@@ -261,7 +281,7 @@
          &__item {
             position: relative;
             width: 100%;
-            max-width: 350px;
+            max-width: none;
             font-family: 'Gilroy';
             font-size: 14px;
             font-weight: 400;

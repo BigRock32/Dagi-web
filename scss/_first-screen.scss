@@ -2,12 +2,13 @@
    display: flex;
    align-items: center;
    height: 100vh;
-   padding-top: 140px;
+   padding-top: 50px;
 
    &__intro {
       display: flex;
       justify-content: space-between;
       gap: 40px;
+      align-items: center;
    }
 
    &__left {
@@ -22,7 +23,7 @@
       font-size: 40px;
       font-family: "ProximaNova";
       text-transform: uppercase;
-      max-width: 700px;
+      max-width: 590px;
       color: var(--white-color);
       line-height: 1.4em;
       letter-spacing: 2px;
@@ -91,7 +92,7 @@
       }
 
       &__subtitle {
-         line-height: 18px;
+         font-size: 18px;
          line-height: 1.6rem;
       }
 
@@ -269,7 +270,7 @@
    height: auto;
 
       &__title {
-         font-size: 21px;
+         font-size: 5.6vw;
          max-width: none;
          margin: 0px 0px 10px 0px;
       }
